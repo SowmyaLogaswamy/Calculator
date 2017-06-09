@@ -4,23 +4,50 @@
     <title>Calculator</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
     <div class="container">
+      <form>
      <h1>Calculator</h1>
-     <form id="add">
-      <div class="form-group">
-        <label for="add1">1st number:</label>
-        <input id="add1" class="form-control" type="text">
-      </div>
-      <div class="form-group">
-        <label for="add2">2nd number:</label>
-        <input id="add2" class="form-control" type="text">
-      </div>
-      <button type="submit" class="btn">Add!</button>
-      </form>
-    </div>    
+     <div class="form-group">
+     <input type=text id="num1">
+     <input type=text id="num2">
+     <input type=text id="result">
+   </div>
+     <input type=button id="addbutton">Add</input>
+     <input type=button id="subbutton">Subtract</input>
+     <input type=button id="multiplybutton">
+     <input type=button id="dividebutton">
+     <input type=button id="clearbutton">
+   </form>
+   <form>
+     <h1>Generate Bill</h1>
+     <div class="form-group">
+       Beverage : <select class="form-control" id = "beverage">
+         <option>Select an option</option>
+         <option value="Coffee">Kaapi thanni</option>
+         <option value="Tea">Tea Thanni</option>
+         <option>Kombucha</option>
+         <option>Water</option>
+       </select>
+       <div class="radio">
+         <label>
+           <input type="radio" name="currency" value="rupees">
+           Rupees
+         </label>
+       </div>
+       <div class="radio">
+         <label>
+           <input type="radio" name="currency" value="dollars">
+           Dollars
+         </label>
+       </div>
+       <input type="button" id="costbutton" value="Get me the price">
+     </div>
+     <label id = "lovelabel">I love coffee !</label>
+     <p id="loveparagraph">Coffee is very healthy, a coffee= 3.35</p>
+    </div>
   </body>
 </html>
